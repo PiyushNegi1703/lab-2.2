@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.tagline{
+    background-image: url(./assets/kw-background.png);
+    background-size: 100vw;
+}
+
+.tagline h3{
+    font-size: 70px;
+}
+
+.tagline-text{
+    padding: 150px 0 150px 70px;
+}
+
+.shopping{
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping h3{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.book{
+    margin-bottom: 100px;
+}
+
+.book img{
+    width: 200px;
+}
+
+.games{
+    margin-bottom: 100px;
+}
+
+.games img{
+    width: 350px;
+}
+
+.handmade{
+    margin-bottom: 100px;
+}
+
+.handmade img{
+    width: 350px;
+}
+
+.add{
+    background-color: aqua;
+    display: flex;
+    width: 70px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.add img{
+    width: 20px;
+    height: 20px;
+}
+
+strong{
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+footer img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+footer div{
+    margin: 10px 40px;
+}
+
+.credits{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.credits h3{
+    margin: 2px;
+    font-size: 25px;
+}
+
+.credits p{
+    margin: 2px;
+    font-size: 17px;
+}
+
+@media (max-width:600px) {
+    *{
+        margin: auto;
+    }
+    .tagline{
+        background-repeat: no-repeat;
+    }
+    .book{
+        display: flex;
+        flex-direction: column;
+    }
+    .games{
+        display: flex;
+        flex-direction: column;
+    }
+    .handmade{
+        display: flex;
+        flex-direction: column;
+    }
+    .space-between{
+
+        justify-content: flex-start;
+    }
+    .tagline-text{
+        padding: 0%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    .tagline h3{
+        font-size: 2vh;
+    }
+    .credits h3{
+        font-size: 5vw;
+    }
+    .credits p{
+        font-size: 2vw;
+    }
+}
